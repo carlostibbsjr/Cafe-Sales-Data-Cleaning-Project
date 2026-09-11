@@ -14,6 +14,6 @@ The goal of this project is to identify, clean, and standardize the dataset whil
 
 ## My Approach
 ### 1. Formatting the Data and Identifying the Issues
-First and foremost, it is important to format the dataset as a table, as this allows me to organize the data clearly, making it easier to sort, filter, and identify inconsistencies without disrupting the existing structure.
+First and foremost, it is important to format the dataset as a table, as this allows me to organize the data clearly, making it easier to sort, filter, and identify inconsistencies without disrupting the existing structure. In addition to the obvious "ERROR" and blank entries, I also noticed that the Price Per Unit and Total Spent columns are not formatted as currency. 
 
 
