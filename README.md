@@ -27,9 +27,9 @@ I replaced all "ERROR" and "UNKNOWN" entries with "N/A" to ensure that the data 
 
 
 ### 3. Handling the Blank and N/A Entries
-Now, it is important to note that blank and "N/A" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank should be evaluated and based on the column and whether the missing information can be reliably determined.
+Now, it is important to note that blank and "N/A" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank and "N/A" should be evaluated and based on the column and whether the missing information can be reliably determined.
 
-For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to replace blank entries with "N/A" to maintain the integrity of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, blank entries can evaluated and determined using calculations based on the available data. For example, if the Quantity and Price Per Unit are provided, the Total Spent can be calculated by multiplying the two values together. Likewise, if the Quantity and Total Spent are available, the Price Per Unit can be calculated by dividing the Total Spent by the Quantity. 
+For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to replace blank entries with "N/A" to maintain the integrity of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, blank and "N/A "entries can evaluated and determined using calculations based on the available data. For example, if the Quantity and Price Per Unit are provided, the Total Spent can be calculated by multiplying the two values together. Likewise, if the Quantity and Total Spent are available, the Price Per Unit can be calculated by dividing the Total Spent by the Quantity. 
 
 
 
