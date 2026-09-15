@@ -29,9 +29,14 @@ I replaced all "ERROR", "UNKNOWN", and blank entries with "NA" to ensure that th
 
 
 ### 3. Handling the NA Entries
-Now, it is important to note that all "NA" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank "NA" should be evaluated and based on the column and whether the missing information can be reliably determined.
+Now, it is important to note that all "NA" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank "NA" should be evaluated and based on the column and whether the missing information can be reliably determined from the other available data.
 
-For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to leave the "NA" entries unchanged to preserve the integrity and accuracy of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, "NA" entries can be evaluated and determined using calculations based on the available data. For example, if the Quantity and Price Per Unit are provided, the Total Spent can be calculated by multiplying the two values together. Likewise, if the Quantity and Total Spent are available, the Price Per Unit can be calculated by dividing the Total Spent by the Quantity. 
+For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to leave the "NA" entries unchanged to preserve the integrity and accuracy of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, I created Clean columns to correct the missing entries when they could be calculated from the available information. For example, if Quantity and Price Per Unit were available but Total Spent was "NA", I calculated Total Spent by multiplying Quantity x Price Per Unit. Similarly, if Quantity and Total Spent were available but Price Per Unit was "NA", I calculated Price Per Unit by dividing Total Spent / Quantity. The same approach was applied to the Quantity column when the other two values were available.
+
+<img width="1526" height="736" alt="image" src="https://github.com/user-attachments/assets/84a9619e-9fba-4a0c-9f42-6f97c9024dab" />
+
+
+
 
 
 
