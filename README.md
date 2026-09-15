@@ -33,7 +33,26 @@ Now, it is important to note that all "NA" entries in each column should not be 
 
 For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to leave the "NA" entries unchanged to preserve the integrity and accuracy of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, I created Clean columns to correct the missing entries when they could be calculated from the available information. For example, if Quantity and Price Per Unit were available but Total Spent was "NA", I calculated Total Spent by multiplying Quantity x Price Per Unit. Similarly, if Quantity and Total Spent were available but Price Per Unit was "NA", I calculated Price Per Unit by dividing Total Spent / Quantity. The same approach was applied to the Quantity column when the other two values were available.
 
-<img width="1526" height="736" alt="image" src="https://github.com/user-attachments/assets/84a9619e-9fba-4a0c-9f42-6f97c9024dab" />
+<img width="1523" height="742" alt="image" src="https://github.com/user-attachments/assets/7bbc219d-613a-48d6-8d20-7c5fe0021ee9" />
+
+
+
+### 4. Replacing with Cleaned Columns
+For the final step, I replaced the original Quantity, Price Per Unit, and Total Spent columns with the cleaned columns that were calculated using the available data. This ensures that the final dataset contains the most complete and accurate values possible while preserving the original information where calculations could not be made.
+
+## Final Cleaned Dataset 
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/6e0abd26-d3a5-4ee7-8bb8-ab94c1a82f2c" />
+
+As shown in the cleaned dataset, the data is now consistently formatted, monetary values are displayed as currency, and the calculated values follow the appropriate relationships between Quantity, Price Per Unit, and Total Spent.
+
+
+## Conclusion
+Overall, I successfully transformed the Raw Cafe Sales dataset into a cleaner and more consistent dataset that is accurate and better suited for analysis. I first identified common data quality issues, including "ERROR", "UNKNOWN", blank entries, invalid zero prices, and inconsistent formatting. I then standardized these entries, formatted the financial columns as currency, and created cleaned columns to calculate missing Quantity, Price Per Unit, and Total Spent values when enough information was available.
+
+The final cleaned dataset can now be used more effectively for data analysis, visualization, and identifying purchasing patterns, product, popularity, spending habits, and payment preferences. 
+
+
 
 
 
