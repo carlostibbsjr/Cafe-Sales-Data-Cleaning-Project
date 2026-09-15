@@ -14,14 +14,14 @@ The goal of this project is to identify, clean, and standardize the dataset whil
 
 ## My Approach
 ### 1. Formatting the Data and Identifying the Issues
-First and foremost, it is important to format the dataset as a table, as this allows me to organize the data clearly, making it easier to sort, filter, and identify inconsistencies without disrupting the existing structure.  In addition to the obvious "ERROR", "UNKNOWN", and blank entries, I also noticed that the Price Per Unit and Total Spent columns are not formatted as currency. To make the missing information more noticeable, I highlighted all blank entries in yellow. 
+First and foremost, it is important to format the dataset as a table, as this allows me to organize the data clearly, making it easier to sort, filter, and identify inconsistencies without disrupting the existing structure.  In addition to the obvious "ERROR", "UNKNOWN", and blank entries, I also noticed that the Price Per Unit and Total Spent columns are not formatted as currency. I further noticed that the Price Per Unit column contains values of 0, which is not possible and should be reviewed for accuracy. To make the missing information more noticeable, I highlighted all blank entries in yellow. 
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/48fad8cf-94ad-4415-be6a-2b67745baad4" />
 
 
 
 ### 2. Standardizing the Data
-I replaced all "ERROR" and "UNKNOWN" entries with "NA" to ensure that the data is presented more consistently and clearly, making it easier to interpret. Secondly, I converted the Price Per Unit and Total Spent columns into currency format because they represent monetary amounts. Using a consistent currency format makes the financial information more professional and easier to understand. 
+I replaced all "ERROR", "UNKNOWN", and blank entries with "NA" to ensure that the data is presented more consistently and clearly, making it easier to interpret. I also replaced all "0" entries entries in the Price Per Unit column with "NA", since a price of $0.00 is not possible and would be considered invalid data. Secondly, I converted the Price Per Unit and Total Spent columns into currency format because they represent monetary amounts. Using a consistent currency format makes the financial information more professional and easier to understand. 
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c84a496b-ec66-45df-ae07-3e4b3507e0b3" />
 
