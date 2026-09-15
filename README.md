@@ -21,16 +21,16 @@ First and foremost, it is important to format the dataset as a table, as this al
 
 
 ### 2. Standardizing the Data
-I replaced all "ERROR" and "UNKNOWN" entries with "N/A" to ensure that the data is presented more consistently and clearly, making it easier to interpret. Secondly, I converted the Price Per Unit and Total Spent columns into currency format because they represent monetary amounts. Using a consistent currency format makes the financial information more professional and easier to understand. 
+I replaced all "ERROR" and "UNKNOWN" entries with "NA" to ensure that the data is presented more consistently and clearly, making it easier to interpret. Secondly, I converted the Price Per Unit and Total Spent columns into currency format because they represent monetary amounts. Using a consistent currency format makes the financial information more professional and easier to understand. 
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c84a496b-ec66-45df-ae07-3e4b3507e0b3" />
 
 
 
-### 3. Handling the Blank and N/A Entries
-Now, it is important to note that blank and "N/A" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank and "N/A" should be evaluated and based on the column and whether the missing information can be reliably determined.
+### 3. Handling the Blank and NA Entries
+Now, it is important to note that blank and "NA" entries in each column should not be treated the same way. Guessing missing values could reduce the accuracy and quality of the dataset. Instead, each blank and "NA" should be evaluated and based on the column and whether the missing information can be reliably determined.
 
-For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to replace blank entries with "N/A" to maintain the integrity of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, blank and "N/A "entries can evaluated and determined using calculations based on the available data. For example, if the Quantity and Price Per Unit are provided, the Total Spent can be calculated by multiplying the two values together. Likewise, if the Quantity and Total Spent are available, the Price Per Unit can be calculated by dividing the Total Spent by the Quantity. 
+For the Transaction ID, Item, Payment Method, Location, and Transaction Date columns, it would be best to replace blank entries with "NA" to maintain the integrity of the dataset. For the Quantity, Price Per Unit, and Total Spent columns, blank and "NA" entries can evaluated and determined using calculations based on the available data. For example, if the Quantity and Price Per Unit are provided, the Total Spent can be calculated by multiplying the two values together. Likewise, if the Quantity and Total Spent are available, the Price Per Unit can be calculated by dividing the Total Spent by the Quantity. 
 
 
 
