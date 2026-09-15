@@ -23,7 +23,8 @@ First and foremost, it is important to format the dataset as a table, as this al
 ### 2. Standardizing the Data
 I replaced all "ERROR" and "UNKNOWN" entries with "N/A" to ensure that the data is presented more consistently and clearly, making it easier to interpret. Secondly, I converted the Price Per Unit and Total Spent columns into currency format because they represent monetary amounts. Using a consistent currency format makes the financial information more professional and easier to understand. 
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/bc8c75bf-70ae-4e6a-988c-07454423184a" />
+<img width="977" height="714" alt="image" src="https://github.com/user-attachments/assets/c84a496b-ec66-45df-ae07-3e4b3507e0b3" />
+
 
 
 ### 3. Handling the Blank and N/A Entries
